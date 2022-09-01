@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About me</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Fira Code"
+        />
+    </head>
+    <!-- Progress bar loader -->
+    <body onload="myFunction()">
+        <div id="progress">
+            <div class="progressbar"></div>
+        </div>
+        <div id="videogameconsole">
+            <img src="./css/retro-game.png" alt="" />
+        </div>
+        <!-- Main content -->
+        <div id="webcontent" class="animate">
+            <!-- Navigation bar -->
+            <div class="navbar">
+                <header>
+                    <nav>
+                        <a href="./index.html"
+                            ><button id="bluebutton">About me</button></a
+                        >
+                        <a href="./projects.html"
+                            ><button id="yellowbutton">Projects</button></a
+                        >
+                        <a href="./contact.html"
+                            ><button id="greenbutton">Contact</button></a
+                        >
+                        <a href="./ECs.html"
+                            ><button id="redbutton">Extracurriculars</button></a
+                        >
+                    </nav>
+                </header>
+            </div>
+            <!-- Introduction text box about me and relevant socials -->
+            <div class="pagemargin">
+                <div class="textbox1">
+                    <h3 id="bluecolor">About me</h3>
+                    <p>
+                        Hello there! My name is Abrar and I'm a student @
+                        <a id="links" href="https://www.wlu.ca/" target="_blank"
+                            >Wilfrid Laurier University</a
+                        >
+                        studying
+                        <a
+                            id="links"
+                            href="https://www.wlu.ca/programs/science/undergraduate/computer-science-bsc/index.html"
+                            target="_blank"
+                            >Computer Science (BSc)</a
+                        >.
+                    </p>
+                    <p>
+                        I'm currently learning javascript and python data
+                        structures/algorithms.
+                    </p>
+                    <p>
+                        Apart from that, my hobbies include swimming, reading,
+                        and programming.
+                    </p>
+                    <p>I am interested in machine learning and AI.</p>
+                </div>
+                <div class="profilepic">
+                    <img src="./CSS/profilepic.jpg" alt="Picture of me" />
+                </div>
+                <br />
+                <br />
+                <div class="textbox2">
+                    <h3 id="headertext">Socials</h3>
+                    <div class="socials">
+                        <p>
+                            <a
+                                href="https://www.instagram.com/abrar.murad416"
+                                target="_blank"
+                                ><img
+                                    src="./CSS/instagram.png"
+                                    alt="Instagram profile"
+                            /></a>
+                        </p>
+                    </div>
+                    <div class="socials">
+                        <p>
+                            <a
+                                href="https://github.com/abrarmurad416"
+                                target="_blank"
+                                ><img
+                                    src="./CSS/github.png"
+                                    alt="Github profile"
+                            /></a>
+                        </p>
+                    </div>
+                    <div class="socials">
+                        <p>
+                            <a
+                                href="mailto:abrarmurad.am@gmail.com"
+                                target="_blank"
+                                ><img
+                                    src="./CSS/google.png"
+                                    alt="Gmail email address"
+                            /></a>
+                        </p>
+                    </div>
+                    <div class="socials">
+                        <p>
+                            <a
+                                href="https://medium.com/@abrar.murad416"
+                                target="_blank"
+                                ><img
+                                    src="./CSS/medium.png"
+                                    alt="Medium profile"
+                            /></a>
+                        </p>
+                    </div>
+                    <div class="socials">
+                        <p>
+                            <a
+                                href="https://www.linkedin.com/in/abrar-murad"
+                                target="_blank"
+                                ><img
+                                    src="./CSS/linkedin.png"
+                                    alt="LinkedIn profile"
+                            /></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <!-- Footer -->
+            <div class="footer">
+                <p>
+                    Copyright © 2022 Abrar Murad | All Rights Reserved
+                    <span
+                        ><a id="credits" href="./credits.html">Credits</a></span
+                    >
+                </p>
+            </div>
+        </div>
+        <!-- script hides main content until loader is finished -->
+        <script>
+            var myVar;
+            function myFunction() {
+                myVar = setTimeout(showPage, 950);
+            }
+            function showPage() {
+                document.getElementById("progress").style.display = "none";
+                document.getElementById("videogameconsole").style.display =
+                    "none";
+                document.getElementById("webcontent").style.display = "block";
+            }
+        </script>
+    </body>
+</html>

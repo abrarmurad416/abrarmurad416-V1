@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projects</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Fira Code"
+        />
+    </head>
+    <!-- Progress bar loader -->
+    <body onload="myFunction()">
+        <div id="progress">
+            <div class="progressbar"></div>
+        </div>
+        <div id="videogameconsole">
+            <img src="./css/retro-game.png" alt="" />
+        </div>
+        <!-- Main content -->
+        <div id="webcontent" class="animate">
+            <!-- Navigation bar -->
+            <div class="navbar">
+                <header>
+                    <nav>
+                        <a href="./index.html"
+                            ><button id="bluebutton">About me</button></a
+                        >
+                        <a href="./projects.html"
+                            ><button id="yellowbutton">Projects</button></a
+                        >
+                        <a href="./contact.html"
+                            ><button id="greenbutton">Contact</button></a
+                        >
+                        <a href="./ECs.html"
+                            ><button id="redbutton">Extracurriculars</button></a
+                        >
+                    </nav>
+                </header>
+            </div>
+            <!-- Project title text box and project text boxes -->
+            <div class="pagemargin">
+                <div class="introtextbox">
+                    <h3 id="yellowcolor">Projects</h3>
+                </div>
+                <br />
+                <br />
+                <div class="textbox4">
+                    <h4>
+                        <a
+                            id="links"
+                            target="_blank"
+                            href="https://github.com/abrarmurad416/Curency-Exchange-Calculator"
+                            >Currency Exchange Calculator</a
+                        >
+                    </h4>
+                    <p><em>Language used: C++</em></p>
+                    <p id="FClight">
+                        Straightforward and efficient calculator that converts
+                        10 different currency values to CAD and vice versa.
+                        Additionally, the calculator aggregates the total price
+                        of each currency and displays it to the user
+                        <em>in to</em> CAD and <em>out from</em> CAD.
+                    </p>
+                </div>
+                <br />
+                <br />
+                <div class="textbox4">
+                    <h4>
+                        <a
+                            id="links"
+                            target="_blank"
+                            href="https://github.com/abrarmurad416/Abrars-Apple-Apparatus"
+                            >Online Vendor System</a
+                        >
+                    </h4>
+                    <p><em>Language used: C++</em></p>
+                    <p id="FClight">
+                        Premium-themed online vendor system that sells a
+                        collection of exotic apples. Each apple has a short
+                        description that describes its location, taste/feel,
+                        availabilty, and supplementary info. Futhermore, the
+                        code displays a grid-based selection system that
+                        incorporates the apple prices, quantity for selection,
+                        and international or national fees for shipping. A
+                        digital receipt is outputted once the user submits the
+                        order.
+                    </p>
+                </div>
+            </div>
+            <br />
+            <br />
+            <!-- Footer -->
+            <div class="footer">
+                <p>
+                    Copyright © 2022 Abrar Murad | All Rights Reserved
+                    <span
+                        ><a id="credits" href="./credits.html">Credits</a></span
+                    >
+                </p>
+            </div>
+        </div>
+        <!-- script hides main content until loader is finished -->
+        <script>
+            var myVar;
+            function myFunction() {
+                myVar = setTimeout(showPage, 950);
+            }
+            function showPage() {
+                document.getElementById("progress").style.display = "none";
+                document.getElementById("videogameconsole").style.display =
+                    "none";
+                document.getElementById("webcontent").style.display = "block";
+            }
+        </script>
+    </body>
+</html>

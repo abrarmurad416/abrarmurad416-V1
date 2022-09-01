@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Credits</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link 
+            rel="stylesheet" 
+            href="https://fonts.googleapis.com/css?family=Fira Code"
+        />
+    </head>
+    <!-- Progress bar loader -->
+    <body onload="myFunction()">
+        <div id="progress">
+            <div class="progressbar"></div>
+        </div>
+        <div id="videogameconsole">
+            <img src="./css/retro-game.png" alt="" />
+        </div>
+        <!-- Main content -->
+        <div id="webcontent" class="animate">
+            <!-- Navigation bar -->
+            <div class="navbar">
+                <header>
+                    <nav>
+                        <a href="./index.html"
+                            ><button id="bluebutton">About me</button></a
+                        >
+                        <a href="./projects.html"
+                            ><button id="yellowbutton">Projects</button></a
+                        >
+                        <a href="./contact.html"
+                            ><button id="greenbutton">Contact</button></a
+                        >
+                        <a href="./ECs.html"
+                            ><button id="redbutton">Extracurriculars</button></a
+                        >
+                    </nav>
+                </header>
+            </div>
+            <!-- Credits intro text box and credits with links to original publishers -->
+            <div class="pagemargin">
+                <div class="creditsintrotextbox">
+                    <h3 id="purpletextcolor">Credits</h3>
+                </div>
+                <div class="textbox1">
+                    <ul>
+                        <li><strong>Videogame Console</strong> | <a id="links" target="_blank" href="https://www.flaticon.com/free-icon/retro-game_7596670" title="retro icons">Retro icons created by smashingstocks - Flaticon</a></li>
+                        <li><strong>Instagram icon</strong> | <a id="links" target="_blank" href="https://www.flaticon.com/free-icon/instagram_2504918" title="instagram icons">Instagram icons created by Ruslan Babkin - Flaticon</a></li> 
+                        <li><strong>Github icon</strong> | <a id="links" target="_blank" href="https://www.flaticon.com/free-icon/github_2504911" title="github icons">Github icons created by Ruslan Babkin - Flaticon</a></li>
+                        <li><strong>Google icon</strong> | <a id="links" target="_blank" href="https://www.flaticon.com/free-icon/google_2504914" title="google icons">Google icons created by Ruslan Babkin - Flaticon</a></li>
+                        <li><strong>Medium icon</strong> | <a id="links" target="_blank" href="https://www.flaticon.com/free-icon/medium_2504925" title="medium icons">Medium icons created by Ruslan Babkin - Flaticon</a></li>
+                        <li><strong>LinkedIn icon</strong> | <a id="links" target="_blank" href="https://www.flaticon.com/free-icon/linkedin_2504923" title="linkedin icons">Linkedin icons created by Ruslan Babkin - Flaticon</a></li>
+                        <li><strong>YouTube icon</strong> | <a id="links" target="_blank" href="https://www.flaticon.com/free-icon/youtube_2504965#" title="youtube icons">YouTube icons created by Ruslan Babkin - Flaticon</a></li>
+                    </ul>
+                </div>
+                <!-- Footer -->
+            <div class="footer">
+                <p>
+                    Copyright © 2022 Abrar Murad | All Rights Reserved
+                    <span
+                        ><a id="credits" href="./credits.html">Credits</a></span
+                    >
+                </p>
+            </div>
+        </div>
+        <!-- script hides main content until loader is finished -->
+        <script>
+            var myVar;
+            function myFunction() {
+                myVar = setTimeout(showPage, 950);
+            }
+            function showPage() {
+                document.getElementById("progress").style.display = "none";
+                document.getElementById("videogameconsole").style.display =
+                    "none";
+                document.getElementById("webcontent").style.display = "block";
+            }
+        </script>
+    </body> 
+</html>

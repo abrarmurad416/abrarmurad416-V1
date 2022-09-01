@@ -1,0 +1,340 @@
+/* Website background */
+html {
+    background-color: #ffffff;
+}
+
+/* Website font family and padding */
+body {
+    font-family: "Fira Code", "Courier New", Courier, monospace;
+    padding: 1.875rem;
+}
+
+/* Progress bar styles */
+#progress {
+    padding: 0.25rem;
+    width: 100%;
+    max-width: 31.25rem;
+    background: #f5f5f5;
+    border: 0.188rem solid #000000;
+    border-radius: 1.25rem;
+    height: 3.75rem;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25rem, 1.25rem;
+    z-index: 1;
+}
+
+/* Green loading effect */
+#progress .progressbar {
+    height: 100%;
+    width: 20%;
+    border-radius: 1.25rem;
+
+    background: repeating-linear-gradient(
+        135deg,
+        #0bda51,
+        #0bda51 1.25rem,
+        #0fff50 1.25rem,
+        #0fff50 2.5rem
+    );
+    animation: fill-bar 1s infinite;
+}
+
+/* Adjusted keyframes for mobile */
+@keyframes fill-bar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes animate {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes animate {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+/* Console image on top of progress bar */
+#videogameconsole {
+    margin: 0;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Links as it is, on hover, and on active */
+#links {
+    text-decoration: none;
+    color: #ef4423;
+}
+
+#links:hover {
+    color: #9932cc;
+}
+
+#links:active {
+    color: #f6eb14;
+}
+
+/* Content part of the website is white and aligned to the left */
+#webcontent {
+    display: none;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+/* Navigation bar styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0.022rem;
+    left: 0;
+    background: black;
+    z-index: 1;
+    text-decoration: none;
+}
+
+/* Button styles set for all buttons, and IDs are used for specific colors */
+button {
+    padding: 0.9rem;
+    font-family: "Fira Code SemiBold", "Courier New", Courier, monospace;
+    color: #ffffff;
+    text-decoration: none;
+    border-width: 0.219rem;
+}
+
+/* About me button */
+#bluebutton {
+    background-color: #2a3492;
+}
+
+#bluebutton:hover {
+    background-color: #000000;
+}
+
+/* About me text header color */
+#bluecolor {
+    color: #2a3492;
+    font-family: "Fira Code SemiBold", "Courier New", Courier, monospace;
+}
+
+/* Projects button */
+#yellowbutton {
+    background-color: #f6eb14;
+    color: #000000;
+}
+
+#yellowbutton:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Projects text header color */
+#yellowcolor {
+    color: #f6eb14;
+    font-family: "Fira Code SemiBold", "Courier New", Courier, monospace;
+}
+
+/* Contact button */
+#greenbutton {
+    background-color: #4faf44;
+}
+
+#greenbutton:hover {
+    background-color: #000000;
+}
+
+/* Contact text header color */
+#greencolor {
+    color: #4faf44;
+    font-family: "Fira Code SemiBold", "Courier New", Courier, monospace;
+}
+
+/* Extracurriculars button */
+#redbutton {
+    background-color: #ef4423;
+}
+
+#redbutton:hover {
+    background-color: #000000;
+}
+
+/* Extracurriculars text header color */
+#redcolor {
+    color: #ef4423;
+    font-family: "Fira Code SemiBold", "Courier New", Courier, monospace;
+}
+
+/* Résumé button */
+#whitebutton {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#whitebutton:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Credits text header color */
+#purpletextcolor {
+    color: #9932cc;
+    font-family: "Fira Code SemiBold", "Courier New", Courier, monospace;
+}
+
+/* Footer styles */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.6rem;
+}
+
+/* Credits on footer aligned to the right */
+#credits {
+    float: right;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* text boxes used throughout the website */
+.textbox1 {
+    background-color: #faf9f6;
+    line-height: 1.6;
+    width: 48rem;
+    padding: 2rem;
+    border: 0.219rem solid #000000;
+    margin: 0 12.5rem 4rem 0;
+    float: left;
+    clear: both;
+}
+
+.textbox2 {
+    background-color: #faf9f6;
+    width: 48rem;
+    height: 9rem;
+    padding: 2rem;
+    border: 0.219rem solid #000000;
+}
+
+/* Page margins spaces distance from the top */
+.pagemargin {
+    margin-top: 4rem;
+}
+
+/* Profile pic styles */
+.profilepic {
+    position: relative;
+    align-items: center;
+    display: inline-block;
+    width: 23.75rem;
+    height: 26.5rem;
+    outline: 0.219rem solid #000000;
+    margin-top: 0.2rem;
+}
+
+.profilepic img {
+    vertical-align: bottom;
+}
+
+/* Social media icon styles */
+.socials {
+    float: left;
+    margin-right: 3rem;
+}
+
+/* Styles for intro text box */
+.introtextbox {
+    top: 5rem;
+    border: 0.219rem solid #000000;
+    background-color: #faf9f6;
+    text-align: center;
+}
+
+.textbox3 {
+    top: 5rem;
+    border: 0.219rem solid #000000;
+    background-color: #faf9f6;
+    text-align: center;
+    padding: 2rem;
+}
+
+.creditsintrotextbox {
+    top: 5rem;
+    border: 0.219rem solid #000000;
+    background-color: #faf9f6;
+    width: 51rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    float: left;
+    clear: both;
+}
+
+/* Space between each point in the credits section */
+li {
+    margin-bottom: 1rem;
+}
+
+.textbox4 {
+    top: 5rem;
+    border: 0.219rem solid #000000;
+    background-color: #faf9f6;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+/* Switch to Fira Code Light for paragraph writings */
+#FClight {
+    font-family: "Fira Code Light", "Courier New", Courier, monospace;
+}
+
+/* Header text in Fira Code SemiBold */
+#headertext {
+    font-family: "Fira Code SemiBold", "Courier New", Courier, monospace;
+}
+
+/* Logo of stickynotes.ed and styles applied to it */
+.stickynotesedlogo {
+    position: relative;
+    align-items: center;
+    display: inline-block;
+    width: 25rem;
+    height: 24.75rem;
+    outline: 0.219rem solid #000000;
+    margin-top: 0.2rem;
+}
+
+.stickynotesedlogo img {
+    vertical-align: bottom;
+}

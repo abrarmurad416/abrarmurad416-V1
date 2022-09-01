@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Extracurriculars</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Fira Code"
+        />
+    </head>
+    <!-- Progress bar loader -->
+    <body onload="myFunction()">
+        <div id="progress">
+            <div class="progressbar"></div>
+        </div>
+        <div id="videogameconsole">
+            <img src="./css/retro-game.png" alt="" />
+        </div>
+        <!-- Main content -->
+        <div id="webcontent" class="animate">
+            <!-- Navigation bar -->
+            <div class="navbar">
+                <header>
+                    <nav>
+                        <a href="./index.html"
+                            ><button id="bluebutton">About me</button></a
+                        >
+                        <a href="./projects.html"
+                            ><button id="yellowbutton">Projects</button></a
+                        >
+                        <a href="./contact.html"
+                            ><button id="greenbutton">Contact</button></a
+                        >
+                        <a href="./ECs.html"
+                            ><button id="redbutton">Extracurriculars</button></a
+                        >
+                    </nav>
+                </header>
+            </div>
+            <!-- Extracurriculars intro text box and textbox talking about stickynotes.ed with relevant socials -->
+            <div class="pagemargin">
+                <div class="introtextbox">
+                    <h3 id="redcolor">Extracurriculars</h3>
+                </div>
+                <br />
+                <br />
+                <div class="textbox1">
+                    <h4 id="headertex">stickynotes.ed | Co-founder</h4>
+                    <p id="FClight">
+                        stickynotes.ed is a student-led non-profit organization
+                        that offers advice <em>from</em> students
+                        <em>to</em> students. The premise of stickynotes.ed is
+                        to influence and direct highschool students to
+                        university or college programs that suit their passions
+                        and interests while still being sustainable. We offer
+                        volunteering hours to highschool students with a
+                        selection of roles that suit their interest. Currently,
+                        we have 200+ followers on Instagram, which includes
+                        students from numerous PDSB schools and npos on
+                        Instagram. As the Co-founder, I have interviewed a
+                        master’s com sci student on our YouTube channel, created
+                        a company page using Notion, networked with 20+ orgs to
+                        promote our page, created a discord server that offers
+                        advice and résumé help, and created a LinkedIn page.
+                        Next steps in line is to interview a Senior Solutions
+                        Engineer @
+                        <a
+                            id="links"
+                            href="https://www.onetrust.com/"
+                            target="_blank"
+                            >OneTrust</a
+                        >
+                    </p>
+                    <p id="FClight">
+                        For inquiries and questions, contact us through the
+                        <a
+                            id="links"
+                            href="https://stickynotesed.carrd.co/"
+                            target="_blank"
+                            >carrd link</a
+                        >
+                        or join the
+                        <a
+                            id="links"
+                            href="https://discord.gg/QShjF8xtnZ"
+                            target="_blank"
+                            >discord server</a
+                        >.
+                    </p>
+                    <div class="socials">
+                        <p>
+                            <a
+                                href="https://www.youtube.com/channel/UChv5l1HBW3RExPHbhnB6ldA"
+                                target="_blank"
+                                ><img
+                                    src="./CSS/youtube.png"
+                                    alt="YouTube channel"
+                            /></a>
+                        </p>
+                    </div>
+                    <div class="socials">
+                        <p>
+                            <a
+                                href="https://www.instagram.com/stickynotes.ed/"
+                                target="_blank"
+                                ><img
+                                    src="./CSS/instagram.png"
+                                    alt="Instagram profile"
+                            /></a>
+                        </p>
+                    </div>
+                    <div class="socials">
+                        <p>
+                            <a
+                                href="https://www.linkedin.com/company/stickynotes-ed/"
+                                target="_blank"
+                                ><img
+                                    src="./CSS/linkedin.png"
+                                    alt="LinkedIn profile"
+                            /></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="stickynotesedlogo">
+                    <img
+                        src="./CSS/stickynotes.edlogo.jpg"
+                        alt="stickynotes.ed logo"
+                    />
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="footer">
+                <p>
+                    Copyright © 2022 Abrar Murad | All Rights Reserved
+                    <span
+                        ><a id="credits" href="./credits.html">Credits</a></span
+                    >
+                </p>
+            </div>
+        </div>
+        <!-- script hides main content until loader is finished -->
+        <script>
+            var myVar;
+            function myFunction() {
+                myVar = setTimeout(showPage, 950);
+            }
+            function showPage() {
+                document.getElementById("progress").style.display = "none";
+                document.getElementById("videogameconsole").style.display =
+                    "none";
+                document.getElementById("webcontent").style.display = "block";
+            }
+        </script>
+    </body>
+</html>

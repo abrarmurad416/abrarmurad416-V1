@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Fira Code"
+        />
+    </head>
+    <!-- Progress bar loader -->
+    <body onload="myFunction()">
+        <div id="progress">
+            <div class="progressbar"></div>
+        </div>
+        <div id="videogameconsole">
+            <img src="./css/retro-game.png" alt="" />
+        </div>
+        <!-- Main content -->
+        <div id="webcontent" class="animate">
+            <!-- Navigation bar -->
+            <div class="navbar">
+                <header>
+                    <nav>
+                        <a href="./index.html"
+                            ><button id="bluebutton">About me</button></a
+                        >
+                        <a href="./projects.html"
+                            ><button id="yellowbutton">Projects</button></a
+                        >
+                        <a href="./contact.html"
+                            ><button id="greenbutton">Contact</button></a
+                        >
+                        <a href="./ECs.html"
+                            ><button id="redbutton">Extracurriculars</button></a
+                        >
+                    </nav>
+                </header>
+            </div>
+            <!-- Contact title text box and information text box -->
+            <div class="pagemargin">
+                <div class="introtextbox">
+                    <h3 id="greencolor">Contact</h3>
+                </div>
+                <br />
+                <br />
+                <div class="textbox3">
+                    <p>
+                        <a
+                            href="https://drive.google.com/file/d/1EdfpV6Yrq4VPaYzfdL27WkFbmtNMoLlS/view?usp=sharing"
+                            target="_blank"
+                            ><button id="whitebutton">Current Résumé</button></a
+                        >
+                    </p>
+                    <br />
+                    <p>
+                        Send me a message @
+                        <a
+                            id="links"
+                            href="mailto:abrarmurad.am@gmail.com"
+                            target="_blank"
+                            >abrarmurad.am@gmail.com</a
+                        >
+                    </p>
+                    <p><em>or</em></p>
+                    <p>Complete the typeform in the bottom right corner :D</p>
+                </div>
+                <div
+                    data-tf-popover="SJ0QVhIQ"
+                    data-tf-button-color="#4FAF44"
+                    data-tf-button-text="Launch me"
+                    data-tf-iframe-props="title=Contact typeform"
+                    data-tf-medium="snippet"
+                    style="all: unset"
+                ></div>
+                <script src="//embed.typeform.com/next/embed.js"></script>
+            </div>
+            <br />
+            <br />
+            <!-- Footer -->
+            <div class="footer">
+                <p>
+                    Copyright © 2022 Abrar Murad | All Rights Reserved
+                    <span
+                        ><a id="credits" href="./credits.html">Credits</a></span
+                    >
+                </p>
+            </div>
+        </div>
+        <!-- script hides main content until loader is finished -->
+        <script>
+            var myVar;
+            function myFunction() {
+                myVar = setTimeout(showPage, 950);
+            }
+            function showPage() {
+                document.getElementById("progress").style.display = "none";
+                document.getElementById("videogameconsole").style.display =
+                    "none";
+                document.getElementById("webcontent").style.display = "block";
+            }
+        </script>
+    </body>
+</html>
