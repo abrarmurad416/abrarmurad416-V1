@@ -245,6 +245,7 @@ button {
     width: 48rem;
     height: 9rem;
     padding: 2rem;
+    margin-top: 20rem;
     border: 0.219rem solid #000000;
 }
 
@@ -255,8 +256,8 @@ button {
 
 /* Profile pic styles */
 .profilepic {
-    position: relative;
-    align-items: center;
+    position: absolute;
+    align-items: right;
     display: inline-block;
     width: 23.75rem;
     height: 26.5rem;
@@ -326,8 +327,8 @@ li {
 
 /* Logo of stickynotes.ed and styles applied to it */
 .stickynotesedlogo {
-    position: relative;
-    align-items: center;
+    position: absolute;
+    align-items: right;
     display: inline-block;
     width: 25rem;
     height: 24.75rem;
