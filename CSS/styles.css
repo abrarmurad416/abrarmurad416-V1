@@ -242,10 +242,11 @@ button {
 
 .textbox2 {
     background-color: #faf9f6;
+    align-items: left;
     width: 48rem;
     height: 9rem;
     padding: 2rem;
-    margin-top: 20rem;
+    margin-top: 30rem;
     border: 0.219rem solid #000000;
 }
 
